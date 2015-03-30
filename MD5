@@ -1,0 +1,17 @@
+1fb730979f00e3d8c7f90b5aec324a22 *DESCRIPTION
+cb0b5ae03ed1bea6d437223bd5bab99f *NAMESPACE
+3726ba3f80b174ed0002cbae32ac55f9 *NEWS
+6b517d0aa994c0ab34d13a6e7ed17890 *R/block_matrix.R
+f88bece89ebc1ed9034736ddc6dac81f *R/e2r.R
+01501726838444ae4c311098eff0bf73 *R/i2e.R
+fb2dfb8ab2ce1e29cba281aeb117bf59 *R/minus_block_matrix.R
+cf153553676228de8c0e4b4f09f1f7f2 *R/nrca.R
+3778505d7a30c5bec7e040d4710e767a *README.md
+9e3a73aaed7f75e4d5ea76c9862ed0e0 *man/block_matrix.Rd
+5a1fb4b5fcc163f7956a3011c905f955 *man/e2r.Rd
+03630e223ef9bf3851f3a110aedab5da *man/i2e.Rd
+5401347807922e79a8fb41a97f7a0acf *man/minus_block_matrix.Rd
+13a72c20aad97cc083235cc8f0bc12d6 *man/nrca.Rd
+73e672bd21163f07ed066d6964760359 *tests/testthat.R
+8e9246140bd6360922fc5b1f81b8b940 *tests/testthat/test_block_matrix.R
+c33bd0ceabd3aa2c76f5d8a129531d3a *tests/testthat/test_minus_block_matrix.R
