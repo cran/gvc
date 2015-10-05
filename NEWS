@@ -1,3 +1,35 @@
+gvc 0.5.0
+=================
+
+* add dfddva() function
+
+* add downstream() function
+
+* add upstream() function
+
+
+gvc 0.4.0
+=================
+
+* break out matrix manipulation to the new diagonals package
+
+* add ffddva() function
+
+* add dfdfva() function
+
+
+gvc 0.3.0
+=================
+
+* update README.md to reflect availability on CRAN
+
+* add gvc documentation file
+
+* re-add examples based on decompr 3.0.0
+
+* add vignette
+
+
 gvc 0.2.0
 =================
 

@@ -1,0 +1,53 @@
+---
+title: "gvc"
+author: "Bastiaan Quast"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{gvc}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+A typical workflow begins with using the Leontief decomposition in the `decompr` package.
+
+```{r}
+# load the package
+library(decompr)
+```
+
+We will use the example data set.
+
+```{r}
+data(leather)
+```
+
+and apply the leontief decomposition and post multiply with exports
+
+```{r}
+l <- decomp(inter,
+            final,
+            countries,
+            industries,
+            out,
+            method = "leontief",
+            post = "exports")
+```
+
+We can now analyse the `l` object with the **gvc** package.
+
+```{r}
+library(gvc)
+```
+
+For instance, using the **new revealed comparative advantage** (`nrca()`),
+
+```{r}
+nrca(l)
+```
+
+or using **importing to export** (`i2e()`),
+
+```{r}
+i2e(l)
+```

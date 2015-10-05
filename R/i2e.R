@@ -4,6 +4,23 @@
 #' @param x A Leontief decomposed Inter-Country Input Output table as created by decompr
 #' @export
 #' @import decompr
+#' @examples 
+#' # load the decompr package
+#' library(decompr)
+#' 
+#' # load the example data set
+#' data(leather)
+#' 
+#' # create a leontief decomposed data set
+#' l <- decomp(inter,
+#'             final,
+#'             countries,
+#'             industries,
+#'             out)
+#'  
+#'  # apply the Import to Exports analysis
+#'  i2e( l )
+
 
 i2e <- function( x ) {
   
@@ -18,7 +35,7 @@ i2e <- function( x ) {
   x <- matrix(x[,5], nrow=G*N, byrow=TRUE)
   
   # remove exports to self
-  f <- colSums (minus_block_matrix( x, N ) )
+  f <- colSums ( x - diagonals::fatdiag(diagonals::fatdiag(x, steps=G), steps=G ) )
 
   # divide by own exports
   for (j in 1:N) {
