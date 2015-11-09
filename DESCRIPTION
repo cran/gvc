@@ -1,5 +1,5 @@
 Package: gvc
-Version: 0.5.1
+Version: 0.5.2
 Title: Global Value Chains Tools
 Description: Several tools for Global Value Chain ('GVC') analysis are
     implemented.
@@ -16,8 +16,8 @@ Suggests: testthat, knitr
 VignetteBuilder: knitr
 RoxygenNote: 5.0.0
 NeedsCompilation: no
-Packaged: 2015-10-30 08:14:42 UTC; quast
+Packaged: 2015-11-09 13:43:08 UTC; quast
 Author: Bastiaan Quast [aut, cre],
   Victor Kummritz [aut]
 Repository: CRAN
-Date/Publication: 2015-10-31 00:30:25
+Date/Publication: 2015-11-09 15:32:14
