@@ -4,10 +4,14 @@
 \alias{e2r}
 \title{Exporting to Re-export}
 \usage{
-e2r(x)
+e2r(x, by = NULL, subset = NULL)
 }
 \arguments{
 \item{x}{A Leontief decomposed Inter-Country Input Output table as created by decompr}
+
+\item{by}{variable to subset by}
+
+\item{subset}{value(s) of the subset variable to select}
 }
 \description{
 Exporting to Re-export
@@ -20,13 +24,12 @@ library(decompr)
 data(leather)
 
 # create a leontief decomposed data set
-l <- decomp(inter,
-            final,
-            countries,
-            industries,
-            out)
+l <- decomp(x = inter,
+            y = final,
+            k = countries,
+            i = industries,
+            o = out)
  
  # apply the Exporting to Re-export
  e2r( l )
 }
-

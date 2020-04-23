@@ -13,11 +13,11 @@
 #' data(leather)
 #'
 #' # create a leontief decomposed data set
-#' l <- decomp(inter,
-#'             final,
-#'             countries,
-#'             industries,
-#'             out,
+#' l <- decomp(x = inter,
+#'             y = final,
+#'             k = countries,
+#'             i = industries,
+#'             o = out,
 #'             method = "leontief",
 #'             post = "final_demand")
 #'
@@ -44,7 +44,7 @@ ffddva <- function ( x, aggregate=FALSE ) {
   x <- rowSums(x)
 
   # create output format
-  x <- data.frame(Source_Country = rep(k, each=N), Source_Industry = rep(i, times=G), ffddva = x)
+  x <- data.frame(Source_Country = rep(k, each=N), Source_Industry = rep(i, times=G), ffddva = x, stringsAsFactors=TRUE)
 
   # aggregate or not
   if (aggregate) {
@@ -52,7 +52,7 @@ ffddva <- function ( x, aggregate=FALSE ) {
 
     x <- tapply(x[,3], f, sum)
 
-    x <- data.frame(Source_Country = row.names(x), ffddva = x)
+    x <- data.frame(Source_Country = row.names(x), ffddva = x, stringsAsFactors=TRUE)
 
     row.names(x) <- NULL
   }

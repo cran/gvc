@@ -1,8 +1,9 @@
 gvc
 --------------
-[![License](http://img.shields.io/badge/license-GPLv3-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-3.0.html)
-[![CRAN Version](http://www.r-pkg.org/badges/version/gvc)](http://cran.r-project.org/package=gvc)
-[![RStudio Cloud Downloads](http://cranlogs.r-pkg.org/badges/gvc?color=brightgreen)](http://cran.rstudio.com/package=gvc)
+[![License](https://img.shields.io/badge/license-GPLv3-brightgreen.svg?style=flat)](https://www.gnu.org/licenses/gpl-3.0.html)
+[![CRAN Version](https://www.r-pkg.org/badges/version/gvc)](https://cran.r-project.org/package=gvc)
+[![Total RStudio Cloud Downloads](https://cranlogs.r-pkg.org/badges/grand-total/gvc?color=brightgreen)](https://cran.r-project.org/package=gvc)
+[![Montly RStudio Cloud Downloads](https://cranlogs.r-pkg.org/badges/gvc?color=brightgreen)](https://cran.r-project.org/package=gvc)
 [![Travis-CI Build Status](https://travis-ci.org/bquast/gvc.png?branch=master)](https://travis-ci.org/bquast/gvc)
 [![Coverage Status](https://coveralls.io/repos/bquast/gvc/badge.svg)](https://coveralls.io/r/bquast/gvc)
 
@@ -17,10 +18,14 @@ Several tools for Global Value Chain ('GVC') analysis are implemented
 - 'Foreign Final Demand Domestic Value Added' (`ffddva()`)
 - 'Domestic Final Demand Domestic Value Added' (`dfddva()`)
 
+Demonstration
+---------------
+![gvc demonstration](https://github.com/bquast/R-demo-GIFs/blob/master/gvc.gif)
+
 
 Installation
 --------------
-The gvc package is available on CRAN, please note that this is a beta version, the API will change.
+The gvc package is available on [CRAN](https://cran.r-project.org/package=gvc), please note that this is a beta version, the API will change.
 
 ```r
 install.packages("gvc")
@@ -63,7 +68,7 @@ help("ffddva")
 help("dfddva")
 ```
 
-In addition to the help files we provide long form examples in the [vignette](http://cran.r-project.org/web/packages/gvc/vignettes/gvc.html).
+In addition to the help files we provide long form examples in the vignette.
 
 ```r
 vignette("gvc")
@@ -81,18 +86,18 @@ An overview of the changes is available in the NEWS file.
 news(package="gvc")
 ```
 
-There is also a blog post with information on my [personal website](http://qua.st/).
+There is also a blog post with information on my [personal website](https://qua.st/).
 
-http://qua.st/gvc/
+https://qua.st/gvc/
 
-This package relies on the [diagonals package](http://qua.st/diagonals) ([CRAN](http:cran.r-project.org/packge=diagonals)).
+This package relies on the [diagonals package](https://qua.st/diagonals) ([CRAN](https://cran.r-project.org/package=diagonals)).
 
 
 Development
 -------------
 Development takes place on the GitHub page.
 
-http://github.com/bquast/gvc
+https://github.com/bquast/gvc
 
 Bugs can be filed on the GitHub issues page.
 

@@ -22,15 +22,14 @@ library(decompr)
 data(leather)
 
 # create a leontief decomposed data set
-l <- decomp(inter,
-            final,
-            countries,
-            industries,
-            out,
+l <- decomp(x = inter,
+            y = final,
+            k = countries,
+            i = industries,
+            o = out,
             method = "leontief",
             post = "final_demand")
 
  # apply dfdfva
  dfdfva( l )
 }
-

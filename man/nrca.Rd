@@ -20,11 +20,11 @@ library(decompr)
 data(leather)
 
 # perform Leontief decomposition
-l <- decomp(inter,
-            final,
-            countries,
-            industries,
-            out,
+l <- decomp(x = inter,
+            y = final,
+            k = countries,
+            i = industries,
+            o = out,
             method = "leontief",
             post = "exports"    )
 
@@ -35,4 +35,3 @@ library(gvc)
 nrca(l)
 
 }
-

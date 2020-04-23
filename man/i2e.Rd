@@ -6,14 +6,18 @@
 \alias{vertical_specialization}
 \title{Importing to Export}
 \usage{
-i2e(x)
+i2e(x, by = NULL, subset = NULL)
 
-vertical_specialisation(x)
+vertical_specialisation(x, by = NULL, subset = NULL)
 
-vertical_specialization(x)
+vertical_specialization(x, by = NULL, subset = NULL)
 }
 \arguments{
 \item{x}{A Leontief decomposed Inter-Country Input Output table as created by decompr}
+
+\item{by}{variable to subset by}
+
+\item{subset}{value(s) of the subset variable to select}
 }
 \description{
 Importing to Export
@@ -30,13 +34,12 @@ library(decompr)
 data(leather)
 
 # create a leontief decomposed data set
-l <- decomp(inter,
-            final,
-            countries,
-            industries,
-            out)
+l <- decomp(x = inter,
+            y = final,
+            k = countries,
+            i = industries,
+            o = out)
  
  # apply the Import to Exports analysis
  i2e( l )
 }
-

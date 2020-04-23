@@ -3,19 +3,17 @@
 \docType{package}
 \name{gvc}
 \alias{gvc}
-\alias{gvc-package}
 \title{Global Value Chain analysis}
 \description{
 Several tools for Global Value Chain ('GVC') analysis are implemented.
-}
-\author{
-Bastiaan Quast \email{bquast@gmail.com}
-Victor Kummritz
 }
 \references{
 {Wang, Zhi, Shang-Jin Wei, and Kunfu Zhu. Quantifying international production sharing at the bilateral and sector levels. No. w19677. National Bureau of Economic Research, 2013.}
 }
 \seealso{
-http://qua.st/decompr
+https://qua.st/decompr
 }
-
+\author{
+Bastiaan Quast \email{bquast@gmail.com}
+Victor Kummritz
+}
