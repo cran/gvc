@@ -2,10 +2,10 @@ gvc
 --------------
 [![License](https://img.shields.io/badge/license-GPLv3-brightgreen.svg?style=flat)](https://www.gnu.org/licenses/gpl-3.0.html)
 [![CRAN Version](https://www.r-pkg.org/badges/version/gvc)](https://cran.r-project.org/package=gvc)
+[![R build status](https://github.com/bquast/gvc/workflows/R-CMD-check/badge.svg)](https://github.com/bquast/gvc/actions?workflow=R-CMD-check)
+[![Coverage status](https://codecov.io/gh/bquast/gvc/branch/master/graph/badge.svg?token=deFpCmSnfW)](https://codecov.io/gh/bquast/gvc)
 [![Total RStudio Cloud Downloads](https://cranlogs.r-pkg.org/badges/grand-total/gvc?color=brightgreen)](https://cran.r-project.org/package=gvc)
 [![Montly RStudio Cloud Downloads](https://cranlogs.r-pkg.org/badges/gvc?color=brightgreen)](https://cran.r-project.org/package=gvc)
-[![Travis-CI Build Status](https://travis-ci.org/bquast/gvc.png?branch=master)](https://travis-ci.org/bquast/gvc)
-[![Coverage Status](https://coveralls.io/repos/bquast/gvc/badge.svg)](https://coveralls.io/r/bquast/gvc)
 
 Several tools for Global Value Chain ('GVC') analysis are implemented
 
@@ -28,15 +28,15 @@ Installation
 The gvc package is available on [CRAN](https://cran.r-project.org/package=gvc), please note that this is a beta version, the API will change.
 
 ```r
-install.packages("gvc")
+install.packages('gvc')
 ```
 
 Additionally the development version, to be used **at your own peril**, is available from [GitHub](https://github.com/bquast/gvc).
 Installation from GitHub is done using:
 
 ```r
-if (!require('devtools')) install.packages('devtools')
-devtools::install_github("bquast/gvc")
+if (!require('remotes')) install.packages('remotes')
+remotes::install_github('bquast/gvc')
 ```
 
 
@@ -51,30 +51,30 @@ library(gvc)
 For information on using the package, please refer to the help files.
 
 ```r
-help("gvc")
-help(package = "gvc")
+help('gvc')
+help(package = 'gvc')
 ```
     
 For examples of usage, see the function specific help pages.
 
 ```r
-help("i2e")
-help("e2r")
-help("nrca")
-help("upsteam")
-help("downstream")
-help("dfdfva")
-help("ffddva")
-help("dfddva")
+help('i2e')
+help('e2r')
+help('nrca')
+help('upsteam')
+help('downstream')
+help('dfdfva')
+help('ffddva')
+help('dfddva')
 ```
 
 In addition to the help files we provide long form examples in the vignette.
 
 ```r
-vignette("gvc")
+vignette('gvc')
 
 # or
-browseVignettes("gvc")
+browseVignettes('gvc')
 ```
 
 
@@ -83,7 +83,7 @@ Additional Information
 An overview of the changes is available in the NEWS file.
 
 ```r
-news(package="gvc")
+news(package='gvc')
 ```
 
 There is also a blog post with information on my [personal website](https://qua.st/).
@@ -101,12 +101,4 @@ https://github.com/bquast/gvc
 
 Bugs can be filed on the GitHub issues page.
 
-https://github.com/bquast/gvc/issues.
-
-
-TODO
--------------
-
- * [x] `nrca()`
- * [ ] `rei()`
- * [ ] `vax()`
+https://github.com/bquast/gvc/issues

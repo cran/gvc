@@ -1,5 +1,5 @@
 Package: gvc
-Version: 5.2.0
+Version: 6.0.0
 Title: Global Value Chains Tools
 Description: Several tools for Global Value Chain ('GVC') analysis are
     implemented.
@@ -12,13 +12,13 @@ License: GPL-3
 URL: https://qua.st/gvc, https://github.com/bquast/gvc
 BugReports: https://github.com/bquast/gvc/issues
 Imports: decompr, diagonals
-Suggests: testthat, knitr
+Suggests: testthat, knitr, rmarkdown
 VignetteBuilder: knitr
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1
 Encoding: UTF-8
 NeedsCompilation: no
-Packaged: 2020-04-23 08:54:51 UTC; bquast
+Packaged: 2021-05-10 02:45:12 UTC; bquast
 Author: Bastiaan Quast [aut, cre],
   Victor Kummritz [aut]
 Repository: CRAN
-Date/Publication: 2020-04-23 16:20:05 UTC
+Date/Publication: 2021-05-10 04:40:02 UTC
