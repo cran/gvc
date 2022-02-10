@@ -1,4 +1,4 @@
-6448f8dbff0057bb392be0eed03bae4e *DESCRIPTION
+281bdea9b5ad2585b1b4197e58fcbc7c *DESCRIPTION
 bdc2cc10246e1999e2bffc0e76cd59d7 *NAMESPACE
 ab9f102cb99e617a16763549ad55035c *NEWS.md
 66aaecb2b9d637dd41265c814c426007 *R/dfddva.R
@@ -15,7 +15,7 @@ d5512d0d8b1cec668eabb73fc573aa07 *build/vignette.rds
 81c3d8921949afb1fc40efa8aeb9d0d8 *inst/CITATION
 9c835c5b98fed2c386738f3007e65cde *inst/doc/gvc.R
 5b97d25ed6cff6ac0fbecf32a15ef51d *inst/doc/gvc.Rmd
-6a554554bb4da8161ae99ed2dbd5077d *inst/doc/gvc.html
+3bb4d51ee38134d8d5f2554d2798ee7f *inst/doc/gvc.html
 af7b47a0bedd22e6c57dba17a6ec6a25 *man/dfddva.Rd
 778606abf346d74e7a1a7ed9fd2a1ac9 *man/dfdfva.Rd
 8547a165e1d3aa14ae3263d513bd76f4 *man/downstream.Rd
